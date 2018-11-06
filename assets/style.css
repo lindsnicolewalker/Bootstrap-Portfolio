@@ -5,29 +5,18 @@ header,
   height: 100%;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover 
-{
-color: black;
-   text-decoration:none; 
-   cursor:pointer;  
-}
-
 @media (max-width: 740px) {
   html,
   body,
   header,
   .view {
     height: 100vh;
-  }
+}
 }
 
 .top-nav-collapse {
   background-color: #78909c !important;
+  border: 1px; 
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -42,6 +31,9 @@ color: black;
 
 h1 {
   letter-spacing: 8px;
+  margin-top:-40%;
+  border : 1px;
+ 
 }
 
 h5 {
@@ -51,6 +43,7 @@ h5 {
 .hr-light {
   border-top: 3px solid black;
   width: 80px;
+  opacity:0.5;
 }
 
 .container {
@@ -60,42 +53,37 @@ h5 {
   max-width: 960px;
 }
 
-img {
-  border-radius: 50%;
-}
-/* ....Portfolio Page.... */
 #portfolio-container {
   padding-top: 30px;
 }
 .portfolio-section {
   padding: 30px;
-  margin: 0 0 40px 0;
+  margin: 0px 0 40px 0;
   width: 100%;
   float: left;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: transparent;
+  border: 1px solid black;
+  color:black;
 }
 
 .work {
   position: static;
-  width: 175px;
+  width: 125px;
   overflow: auto;
   float: left;
   margin: 20px 20px 20px 20px;
 }
-.work:nth-child(even) {
-  margin-right: 20px;
-}
+
 .work img {
-  width: 80%;
+  width: 100%;
   border: 0 none;
   opacity: 1;
 }
-.work h3 {
+.work h6 {
   position: relative;
   bottom: 20px;
   margin-bottom: 0px;
-  padding-top: 45px;
+  margin-top: 55px;
   width: 100%;
   color: BLACK;
   text-align: center;
@@ -103,31 +91,30 @@ img {
   font-weight: 300;
   background:0 0 0 0;
   border-bottom: 0;
+  
 }
 .auth-image {
   width: 200px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
-  /* float: left; */
 }
 
-/* ....Contact Page.... */
 #contact-contaianer{
   float:left; 
-
 }
 
 #contact-form ul {
   margin-bottom: 20px;
   max-width: 960px;
   list-style-type: none;
-
 }
+
 #contact-form li {
   margin-bottom: 10px;
   list-style-type: none;
 }
+
 label,
 input[type=text],
 input[type=email],
@@ -136,28 +123,116 @@ textarea {
   width: 100%;
   padding-right:15px;
 }
+
 input[type=text],
 input[type=email],
 textarea {
   height: 35px;
   padding: 0 10px;
   font-size: 14px;
-  border: 1px solid #ddd;
+  background:transparent;
+  border: 2px black;
 }
 
 textarea {
   height: 200px;
 }
+
 input[type=submit] {
   padding: 10px 30px;
-  color: #fff;
+  color: black;
   font-size: 18px;
   cursor: pointer;
-  background: black;
+  background: transparent;
   opacity:1;
-  border: 0 none;
+  border: 1px ;
+}
+
+/* @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); */
+
+a, a:hover {
+	color: #000;
+	text-decoration: none;
+	padding: 5px;
+}
+
+#headerContent {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+video {
+  position: inherit;
+  min-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+p {
+  position: absolute;
+  text-align: center;
+  font-size: 4em;
+  z-index: 9999;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
+
+body, html {
+  font-family:'Bitter';
+}
+
+.kont {
+  position: relative
+}
+
+.kont video {
+  width: 100%;
+  height:auto;
+}
+
+.kont .ent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(28,31,39, 0.6)
+}
+
+.ent {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.title {
+  width:100%;
+  color:white;
+  text-shadow:0 1px 1px black;
+  text-align:center;
+  top:25%;
+  position:relative;
+  font-size:2.5em;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.description {
+  top:26%;
+  width:60%;
+  margin:0 auto;
+  text-align:center;
+  color:white;
+  position:relative;
+  font-weight:400;
+  opacity:.8;
 }
 
 
-
-
+  
